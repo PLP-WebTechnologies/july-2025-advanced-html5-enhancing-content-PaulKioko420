@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Assignment</title>
+</head>
+<body>
+
+    <h1>HTML Assignment</h1>
+
+    <!-- Definition List -->
+    <h2>Web Technologies</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language, the structure of a web page.</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets, the styling of a web page.</dd>
+        <dt>JavaScript</dt>
+        <dd>Programming language for interactivity.</dd>
+    </dl>
+
+    <!-- Nested Ordered List -->
+    <h2>Steps to Create a Web Page</h2>
+    <ol>
+        <li>Plan the structure
+            <ol>
+                <li>Identify content</li>
+                <li>Organize layout</li>
+            </ol>
+        </li>
+        <li>Write HTML code</li>
+        <li>Add CSS styling</li>
+        <li>Add JavaScript for interactivity</li>
+    </ol>
+
+    <!-- Image -->
+    <h2>Sample Image</h2>
+    <img src="https://images.pexels.com/photos/158063/bellingrath-gardens-alabama-landscape-scenic-158063.jpeg" alt="Sample image" width="300">
+
+    <!-- Audio -->
+    <h2>Sample Audio</h2>
+    <audio controls>
+        <source src="This Year (Blessing) - Victor Thompson x Ehis D Greatest (Official Video).mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Video -->
+    <h2>Sample Video</h2>
+    <video controls width="400">
+        <source src="https://videos.pexels.com/video-files/14989515/14989515-hd_1920_1080_30fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Table -->
+    <h2>Student Table</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mary</td>
+                <td>Female</td>
+                <td>Kenya</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Male</td>
+                <td>Uganda</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Form -->
+    <h2>Registration Form</h2>
+    <form action="/submit" method="post">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" autocomplete="name" required minlength="2">
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email" required>
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Create a password" required pattern=".{6,}">
+            <br><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferences</legend>
+
+            <p>Gender:</p>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <br><br>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">-- Select a country --</option>
+                <option value="kenya">Kenya</option>
+                <option value="uganda">Uganda</option>
+                <option value="tanzania">Tanzania</option>
+            </select>
+            <br><br>
+
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" name="comments" placeholder="Write something here..." rows="4" cols="40"></textarea>
+        </fieldset>
+
+        <br>
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>
